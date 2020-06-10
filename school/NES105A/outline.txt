@@ -1,0 +1,50 @@
+1) Before my presentation, we're doing a challenge, put it on instagram, the #UrukChallenge
+Don't write anything down, don't use your calculators or phones
+
+2) So you can respect importance of arithmetic
+
+4) Focus on Old Babylon, where most documents come from
+Hypothesis: Centralization began shortly before Old Babylon (Sargonic Empire)
+Necessary to have arithmetic to keep up with administrative work
+
+5) Counterclockwise from top right: 1 unit of textile, 1 unit of oil, 1 unit of wheat,
+" sheep, " rope, " rope, "metal, "garment. Discrete amounts of continuous quantities, shows sophistication
+As early as 3300 BCE - also thought that this happened alongside development of writing (per Dr Tanaka)
+
+6) Plimpton Base 60 tablet (of Pythagorean triples - 1000 years before Pythagoras) 4th from bottom:
+23,52,12
+
+7) By Old Babylon we start seeing lots of tables, e.g. multiplication tables
+Same time as Hammurabi's expansion. Studied by scribes in school
+Shows a lot of algorithmic, step-by-step computation, NOT proofs and theory like Greeks
+"An emphasis on tradition" as Leslie said
+
+8) In base 60 because lots of regular numbers (divide with 60 evenly)
+In fact, how they divided was basically 1/r = 1/(x+y) = (1/x)(x/(x+y)) = (1/x)(1/(1+y/x))
+y/x is hopefully easier to divide
+
+Given 2,5 = 125: 5 is regular, so we multiply by the reciprocal 12 (12 * 5 = 60)
+12 * 2 = 24, 24 + 1 = 25
+Iterate until we get a regular number.
+25 = 2,24 because 12*2, 24 = 28,48
+Divide by 60^n
+28/60^2 + 48/60^3 = .008 = 1/125
+Multiply that to get your answer
+What we would call homework problems: quadratic and exponential growth
+l + w = 50, take (50/2)^2 = 625, subtract 600 to get 25. sqrt(25) = 5.
+l = 25 + 5 = 30, w = 25 - 5 = 20
+Quadratic used to measure plots of land, exponential growth used for accounting, interest
+Had word problems about interest - shows economic sophistication
+
+9) Mid 2000s - shows clearly defined exchange rates, only possible by multiplication and addition
+Shortly before Babylon, early consolidation, shows bureaucratic process
+Textile exports from Elam?
+Another example: list Bill put of sacrificed goods
+
+10) Astronomy was practical too: important to compute moon cycles for use in omens, predictions
+
+Innovation was slow - emphasis on algorithms and computation, not new theorems (like Greeks)
+For all their sqrt problems, "Babylonian Algorithm" of CS61a fame not discovered until Roman times
+Most documents are either school practice problems, or administrative texts
+Great tradition of bookkeeping
+

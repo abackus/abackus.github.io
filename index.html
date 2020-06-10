@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <style type="text/css">
+body {
+    background-color: #d5d5c9;
+    color: #111;
+    font-family: sans-serif;
+}
+
+#sec {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.img {
+    width: 90%;
+    margin: auto;
+}
+
+@media(min-width:600px) {
+    #sec {
+        width:75%;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .img {
+        float: right;
+        width:400px;
+        margin: 15px;
+    }
+}
+
+p, dl {
+    font-size: 1.05em;
+}
+
+dd li {
+    margin-left: -30px;
+}
+
+dd li li {
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+}
+  </style>
+  <title>Aidan Backus</title>
+
+</head>
+<body>
+<div id="sec">
+<p class="img">
+<img src="pics/aidan.jpg" width="400px">
+</p>
+    <p>I am Aidan Backus. Next year I will be a Ph.D. candidate at Brown University; previously I was at UC Berkeley. My main research interests are PDE, harmonic analysis, and dynamical systems. I also like logic and mathematical biology!</p>
+    <p>I can be reached at aidan_backus@brown.edu. You might also read my <a href="professional/cv.pdf">CV</a>, <a href="http://github.com/catuse">GitHub</a>, and <a href="https://backus.home.blog/">mathematical blog</a>.</p>
+
+    <ul>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications and Preprints</a></li>
+        <li><a href="#coursework">Relevant coursework</a></li>
+        <li><a href="#writings">Writings</a></li>
+        <li><a href="#math">Other math</a></li>
+        <li><a href="#gaming">Hobbies</a></li>
+    </ul>
+
+<h2 id="teaching">Teaching</h2>
+<p>The following is a list of my teaching posts at UC Berkeley.</p>
+<dl>
+    <dt>Spring 2020</dt>
+    <dd>Reader, Math 202B &mdash; Topology and Analysis<br>
+      Organizer, MUSA 74 &mdash; Proof-Writing Skills</dd>
+    <dt>Fall 2019</dt>
+    <dd>Student Instructor, Math 185 &mdash; Complex Analysis<br>
+      Organizer, MUSA 74 &mdash; Proof-Writing Skills</dd>
+    <dt>Summer 2019</dt>
+    <dd>Reader, Math 1A &mdash; Calculus</dd>
+    <dt>Spring 2019</dt>
+    <dd>Reader, Math 105 &mdash; Second Course in Analysis<br>
+      Organizer, MUSA 74 &mdash; Proof-Writing Skills</dd>
+    <dt>Fall 2018</dt>
+    <dd>Reader, Math H104 &mdash; Honors Introduction to Mathematical Analysis</dd>
+    <dt>Spring 2018</dt>
+    <dd>Reader, Math 104 &mdash; Introduction to Mathematical Analysis</dd>
+    <dt>Fall 2017</dt>
+    <dd>Academic Intern, CS 61A &mdash; Structure and Interpretation of Computer Programs</dd>
+</dl>
+<p>Time permitting, I also tutor one-on-one. I'm particularly interested in tutoring at the undergraduate level, from calculus to the end-undergraduate classes such as multivariable analysis. If you're interested, contact me and I'll see if we can arrange a time and price.</p>
+
+<h2 id="research">Research</h2>
+<p>In 2019-2020, I worked on my undergraduate thesis, on the Breit-Wigner formula, with Prof. M. Zworski. My current research focuses on strengthening the results I proved in that thesis.</p>
+
+<p>In Summer 2019, I developed an efficient algorithm for computing root multiplicities of Kac-Moody algebras under Prof. Richard Borcherds, and proved some asymptotic results about the growth rates of multiplicities.</p>
+
+<p>In Summer 2018, I was at the Disease Modeling Lab in San Diego State University, under the direction of Dr. Naveen Vaidya. We gave a within-host model for computing the probability of transmission of HIV as a function of age of infection. We then used the computed probabilities as parameters in a between-host age-structure model.</p>
+
+<h2 id="publications">Publications and Preprints</h2>
+<dl>
+  <dt>Aidan Backus, Peter Connick, Joshua Lin. <b><a href="https://arxiv.org/abs/1912.04540">An algorithm for computing root multiplicities in Kac-Moody algebras</a></b></dt>
+    <dd>[math.RA, math.CO] (10 December, 2019) Root multiplicities encode information about the structure of Kac-Moody algebras, and appear in applications as far-reaching as string theory and the theory of modular functions. We provide an algorithm based on the Peterson recurrence formula to compute multiplicities, and argue that it is more efficient than the naive algorithm. You can also view an <a href="https://github.com/catuse/kacmoody/blob/master/kac_moody_algebra.sage">implementation in Sage</a>, to be optimized and submitted to the Sage Project soon!
+    </dd>
+  <dt>Aidan Backus. <b><a href="thesis.pdf">The Breit-Wigner series and distribution of resonances of potentials</a></b></dt>
+    <dd>[math.AP, quant-ph] (24 April, 2020) My undergraduate thesis. We propose a conjecture stating that for resonances \lambda_j of a non-compactly supported potential, the series \sum_j \Im \lambda_j/|\lambda_j|^2 diverges. Such sums naturally appear in the Breit-Wigner approximation of a compactly supported potential. We review the proofs of the Riesz representation formula for subharmonic functions and Titchmarsh's theorem on the distribution of zeroes of the Fourier transform of a compactly supported distribution, and use them to give a proof of the Breit-Wigner approximation that was outlined by Dyatlov and Zworski. We then prove our conjecture in several cases.</dd>
+  <dt>Aidan Backus. <b>The Breit-Wigner series for non-compactly supported potentials on the line</b></dt>
+    <dd>[math.AP, quant-ph] (Coming soon!) We propose a conjecture stating that for resonances, \lambda_j, of a noncompactly supported potential, the series \sum_j \Im \lambda_j/|\lambda_j|^2 diverges. This series appears in the Breit-Wigner approximation for a compactly supported potential, in which case it converges. We provide heuristic motivation for this conjecture and prove it in several cases.</dd>
+  <dt>Naveen Vaidya, Angelica Bloomquist, et al. <b>Modeling the effects of antibodies on the risk of HIV infection</b></dt>
+    <dd>[math.DS, q-bio] Coming soon!</dd>
+</dl>
+
+<h2 id="coursework">Relevant coursework</h2>
+<dl>
+    <dt>Spring 2020</dt>
+    <dd><ul>
+        <li>Math 219 &mdash; Dynamical Systems</li>
+        <li>Math 225B &mdash; Recursion Theory</li>
+        <li>Math 143 &mdash; Algebraic Geometry
+        <li>(UCLA, audited) Math 247B &mdash; Harmonic Analysis</li>
+    </dd>
+    <dt>Fall 2019</dt>
+    <dd>
+        <ul><li>Math 208 &mdash; C&ast;-Algebras</li>
+            <li>Math 212 &mdash; Several Complex Variables</li>
+            <li>Math 278 &mdash; General Relativity in Spherical Symmetry</li>
+        </ul>
+    </dd>
+    <dt>Spring 2019</dt>
+    <dd>
+        <ul><li>Math 202B &mdash; Topology and Analysis</li>
+            <li>Math 250B &mdash; Commutative Algebra</li>
+            <li>Math 222B &mdash; Partial Differential Equations</li>
+        </ul>
+    </dd>
+    <dt>Fall 2018</dt>
+    <dd>
+        <ul><li>Math 202A &mdash; Topology and Analysis</li>
+            <li>Math 250A &mdash; Groups, Rings, and Fields</li>
+            <li>Math 125A &mdash; Mathematical Logic</li>
+            <li>Philosophy 149 &mdash; Nonclassical Logic</li>
+        </ul>
+    </dd>
+    <dt>Spring 2018</dt>
+    <dd>
+        <ul><li>Math H185 &mdash; Honors Introduction to Complex Analysis</li>
+            <li>Math 105 &mdash; Second Course in Analysis</li>
+            <li>Math 114 &mdash; Galois Theory</li>
+            <li>Physics 137A &mdash; Quantum Mechanics</li>
+        </ul>
+    </dd>
+    <dt>Fall 2017</dt>
+    <dd>
+        <ul><li>Math H104 &mdash; Honors Introduction to Analysis</li>
+            <li>Math 113 &mdash; Introduction to Abstract Algebra</li>
+            <li>Math 126 &mdash; Introduction to Partial Differential Equations</li>
+            <li>CS 170 &mdash; Efficient Algorithms and Intractable Problems</li>
+        </ul>
+    </dd>
+    <dt>Spring 2017</dt>
+    <dd>
+        <ul><li>Math 110 &mdash; Linear Algebra</li>
+            <li>Math 55 &mdash; Discrete Math
+            <li>CS 61B &mdash; Data Structures</li>
+        </ul>
+    </dd>
+    <dt>Fall 2016</dt>
+    <dd><ul><li>Math 54 &mdash; Linear Algebra and Differential Equations</li>
+            <li>CS 61A &mdash; Structure and Interpretation of Computer Programs</li>
+            <li>Physics 7A &mdash; Classical Mechanics</li>
+            </li>
+        </ul>
+    </dd>
+</dl>
+
+<h2 id="writings">Miscellaneous writing</h2>
+<ul>
+  <li><b>My lecture notes</b>, in <a href="analysis.pdf">analysis</a> and <a href="logic.pdf">logic</a>.
+    <ul><li>Topics in the analysis notes include: the Bochner integral, ergodic theory and the Hopf argument, the Liouville-Arnold theorem, the Toda lattice and its applications to the QR algorithm, Siegel's KAM theorem, information theory, the holomorphic functional calculus, the GNS construction of a C*-algebra, C*-representation theory of locally compact groups, noncommutative geometry, Hormander's L^2 estimates in several complex variables, Bergman kernels and their application to Chow's theorem, Fourier decoupling, the pseudodifferential calculus with applications to the FBI transform, and cosmic censorship in spherical symmetry.</li>
+    <li>Topics in the logic notes include: the Goedel completeness and incompleteness theorems, Kleene's recursion theorem, Slaman's theorem on induction in weak subtheories of PA, forcing, the Turing degrees, the axiom of determinacy, the priority argument, V = L, Cohen's theorem, weakly compact cardinals, measurable cardinals and their canonical inner model, large cardinals beyond choice, supercompact cardinals and their weak extender models, and the Ultimate L.</li></ul>
+    Any errors and sketchiness were surely my own doing, please don't hound my professors over it!</li>
+  <li><b><a href="thesis.pdf">A conjecture on the distribution of resonances of a non-compactly supported potential</a></b>. My senior thesis (Spring 2020). Along with the promised conjecture, I prove a special case, and give exposition on the proofs of Titchmarsh's theorem and the Breit-Wigner approximation.</li>
+  <li><b><a href="research/formalizations.pdf">Formalizations of analysis</a></b>. Bishop's constructive analysis, Brouwer's intutionistic program, and pointless topology. Written for Philosophy 149 (Fall 2018).</li>
+  <li><b><a href="research/hiv_dynamics.pdf">Mathematical models linking within-host and between-host HIV dynamics</a></b> with Dr. Naveen Vaidya et al. A summary of work done in viral dynamics at the San Diego State REU (Summer 2018), to be cleaned up and turned into two papers to be submitted soon!</li>
+  <li><b><a href="research/baire_ordinals.pdf">Baire classes and the Borel sigma-algebra</a></b>. An exposition of the existence of a Baire function for every countable ordinal on every Polish space. Written before I knew how to use TikZ or knew any logic, so very amateurish.</li>
+   <li><b><a href="school/NES105A/cuneiformarithmetic.pptx">Cuneiform arithmetic</a></b> (PPT), a historical presentation for Near Eastern Studies 105A (Fall 2016), as well as <a href="school/NES105A/cuneiformarithmetic">presenter notes</a>.
+       <li><b><a href="reu-admissions.html">On how to get into an REU</a></b>, based on my experiences.</li>
+</ul>
+
+<h2 id="math">Other math</h2>
+<p>Here's some questions I'd like to know the answer to, or at least concepts I'd like to understand, in no particular order. Most of them are not open problems (but some are), but if you can explain any of them to me, I owe you a bottle of peach soju. I have also taken the liberty of using a lot of words I don't fully understand -- I'm just a student, after all. Questions in <em>italics</em> I've attempted to solve.</p>
+<ol>
+  <li>How fast does the Breit-Wigner approximation converge for a compactly supported ell-infty potential? <em>Does it remain formally valid for a super-exponentially decaying potential which is not analytic?</em></li>
+  <li>Scattering theory in dimensions 3, 5, 7, etc.</li>
+  <li><em>Is there a proof of the Peixoto density theorem which avoids the use of the Stone-Weierstrass theorem and Whitney embedding theorem?</em></li>
+  <li>How well does hyperbolic dynamics extend to the infinite-dimensional case? Is there a good notion of uniform hyperbolicity for evolutionary PDE (whose state space, say, is a Banach manifold)?</li>
+  <li>The viral age-structure equation: is its Cauchy problem well-posed? Does it have a well-defined notion of basic reproduction number? If so, what are its long-term stability properties?</li>
+  <li>PDE that are mathematically interesting, but have biological motivation.</li>
+  <li>Martin-Lof randomness, especially potential applications to ergodic theory.</li>
+  <li>What is the right definition of magical Kac-Moody algebra? <em>What asymptotic properties do they have?</em></li>
+  <li>What is the optimal runtime to compute root multiplicities in Kac-Moody algebras?</li>
+</ol>
+
+<h2 id="gaming">Hobbies</h2>
+<p>Raiding in Final Fantasy XIV is a hobby of mine. I play Paladin for the team "WE ARE NOT OKAY" on Faerie (Aether/NA).</p>
+
+<p>I play viola for the Virtual Video Game Orchestra. Previously I was at the Intermission Orchestra at Cal (where I was also an arranger), the Central Valley Youth Symphony Orchestra, and the San Joaquin County honors high school orchestra.</p>
+
+<p>I also edit the Final Fantasy Wiki and do a lot of technical work for them (bots, FFXIV data mining, writing CSS) for them. If you're interested, check out the <a href="https://github.com/FFWiki">wiki Github</a> and my <a href="http://finalfantasy.wikia.com/wiki/Special:Contributions/Catuse167">site contributions</a>.</p>
+
+<p>Once upon a time, I wrote articles at great length for the <em>Bruin Voice</em>, especially about education policy. You can read some of my work <a href="https://bruinvoice.net/staff/?writer=Aidan%20Backus">at their website</a>.
+
+<p>I also was once a chair at the Mathematics Undergraduate Student Association of UC Berkeley. I managed a proof-writing seminar and Shadow a Math Major Day.</p>
+</div>
+</body>
+</html>
