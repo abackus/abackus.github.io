@@ -50,7 +50,26 @@ dd li li {
 a {
     text-decoration: none;
 }
+
+ul {
+  list-style-type: none;
+}
+
+ol li {
+  padding: 5px;
+}
+
   </style>
+<script>
+function showAbs(id) {
+  var x = document.getElementById('paper' + id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
   <title>Aidan Backus</title>
 
 </head>
@@ -59,55 +78,43 @@ a {
 <p class="img">
 <img src="aidan.jpg" width="400px">
 </p>
-    <p>I am Aidan Backus, a second-year Ph.D. candidate at Brown University; previously I was at UC Berkeley. My main research interest is PDE, but other areas of math I've particularly enjoyed thinking about include harmonic analysis, differential geometry, and recursion theory, as well as applications of the above to epidemiology, quantum mechanics, and computer science.</p>
+    <p>I am Aidan Backus, a second-year Ph.D. candidate at Brown University; previously I was at UC Berkeley. My main research interest is PDE, but I generally enjoy interdisciplinary parts of mathematics.</p>
     <p>I can be reached at aidan_backus@brown.edu. You might also read my <a href="professional/cv.pdf">CV</a>, <a href="http://github.com/abackus">GitHub</a>, and blog <a href="https://backus.home.blog/">Some Compact Thoughts</a>, or check out the community-written real analysis textbook, <a href="https://clopen-analysis.github.io">Clopen Analysis</a>.</p>
-    <p>Lately I've been working on showing that the resolvent of the <a href="https://en.wikipedia.org/wiki/Nonlinear_Schr%C3%B6dinger_equation">cubic NLS equation</a>, which is a model of <a href="https://en.wikipedia.org/wiki/Bose%E2%80%93Einstein_condensate">Bose-Einstein condensates</a>, has a suitable meromorphic continuation. A form of this problem was proposed to me by Maciej Zworski and motivated by his work with Justin Holmer on <a href="https://math.berkeley.edu/~zworski/hz3f.pdf">breathing nonlinear waves</a>. I am now mentored by Prof. Holmer in this area.</p>
-    <p>I am also working with Georgios Daskalopoulos on <a href="https://en.wikipedia.org/wiki/Plateau%27s_problem">Plateau's problem</a> in hyperbolic space. Plateau's problem asks for a region of minimal volume which satisfies given boundary data and is motivated by problems involving soap films.</p>
-    <p>I would also like to optimize my <a href="https://arxiv.org/abs/1912.04540">root-multiplicity algorithm</a> with Peter Connick and Joshua Lin for certain infinite-dimensional Lie algebras. This problem was suggested to us by Richard Borcherds.</p>
-
+    <p>Currently, I am working with Georgios Daskalopoulos on regularity of solutions to <a href="https://en.wikipedia.org/wiki/Plateau%27s_problem">Plateau's problem</a> in the hyperbolic plane. Plateau's problem asks for a region of minimal volume which satisfies given boundary data and is motivated by problems involving soap films.</p>
+    <p>Some other things I'd like to think about: Does the resolvent of the <a href="https://en.wikipedia.org/wiki/Nonlinear_Schr%C3%B6dinger_equation">cubic NLS equation</a>, which is a model of <a href="https://en.wikipedia.org/wiki/Bose%E2%80%93Einstein_condensate">Bose-Einstein condensates</a>, have a suitable meromorphic continuation? (I have worked with Profs. Maciej Zworski, who suggested this problem, and Justin Holmer in this area.) Can I use Galois-theoretic methods to optimize my <a href="https://arxiv.org/abs/1912.04540">root-multiplicity algorithm</a> with Peter Connick and Joshua Lin for certain infinite-dimensional Lie algebras?</p>
+<!--
     <ul>
         <li><a href="#teaching">Teaching</a></li>
         <li><a href="#publications">Publications and Preprints</a></li>
         <li><a href="#talks">Talks given</a></li>
         <li><a href="#coursework">Relevant coursework</a></li>
         <li><a href="#clopen-analysis">Clopen Analysis</a></li><!--
-        <li><a href="#writings">Undergraduate writings</a></li>-->
+        <li><a href="#writings">Undergraduate writings</a></li>
         <li><a href="#gaming">Hobbies</a></li>
-    </ul>
+    </ul>-->
 
 <h2 id="publications">Publications and Preprints</h2>
-<dl>
-  <dt>Aidan Backus, Peter Connick, Joshua Lin. <b><a href="https://arxiv.org/abs/1912.04540">An algorithm for computing root multiplicities in Kac-Moody algebras</a></b></dt>
-    <dd>[math.RA, math.CO] (10 December, 2019) Root multiplicities encode information about the structure of Kac-Moody algebras, and appear in applications as far-reaching as string theory and the theory of modular functions. We provide an algorithm based on the Peterson recurrence formula to compute multiplicities, and argue that it is more efficient than the naive algorithm. You can also view an <a href="https://github.com/catuse/kacmoody/blob/master/kac_moody_algebra.sage">implementation in Sage</a>, to be optimized and submitted to the Sage Project soon!
-    </dd>
-  <dt>Aidan Backus. <b><a href="https://arxiv.org/abs/2005.13765">The Breit-Wigner series for non-compactly supported potentials on the line</a></b></dt>
-      <dd>[math.AP, quant-ph] (28 May, 2020) We propose a conjecture stating that for resonances, \lambda_j, of a noncompactly supported potential, the series \sum_j \Im \lambda_j/|\lambda_j|^2 diverges. This series appears in the Breit-Wigner approximation for a compactly supported potential, in which case it converges. We provide heuristic motivation for this conjecture and prove it in several cases.</dd>
+<p>You can click on the titles of these papers to read their abstracts.</p>
+<ol>
+  <li><a onclick="showAbs(2)"><i>The Breit-Wigner series for noncompactly supported potentials on the line</i></a> (<a href="https://arxiv.org/abs/2005.13765">arXiv</a>)
+  <p id="paper2" style="display:none">We propose a conjecture stating that for resonances, \lambda_j, of a noncompactly supported potential, the series \sum_j \Im \lambda_j/|\lambda_j|^2 diverges. This series appears in the Breit-Wigner approximation for a compactly supported potential, in which case it converges. We provide heuristic motivation for this conjecture and prove it in several cases.</p>
+</li>
+
+  <li><a onclick="showAbs(1)"><i>An algorithm for computing root multiplicities in Kac-Moody algebras</i></a>, with Joshua Lin and Peter Connick (<a href="https://arxiv.org/abs/1912.04540">arXiv</a>, <a href="https://github.com/catuse/kacmoody/blob/master/kac_moody_algebra.sage">implementation in Sage</a>)
+    <p id="paper1" style="display:none">We provide an algorithm based on the Peterson recurrence formula to compute root multiplicities in Kac-Moody algebras, and argue that it is more efficient than the naive algorithm.</p>
+  </li>
 <!--  <dt>Naveen Vaidya, Angelica Bloomquist, et al. <b>Modeling the effects of antibodies on the risk of HIV infection</b></dt>
     <dd>[math.DS, q-bio] Coming soon!</dd>-->
-</dl>
-
-<h3>Nonpublishable writing</h3>
-<dl>
-<dt>Aidan Backus. <b><a href="uniformization.pdf">The uniformization theorem</a></b></dt>
-<dd>[math.CV] (13 April, 2021) My final project for complex analysis at Brown. We expound the proof of the uniformization theorem.</dd>
-<dt>Aidan Backus. <b><a href="thesis.pdf">The Breit-Wigner series and distribution of resonances of potentials</a></b></dt>
-<dd>[math.AP, quant-ph] (24 April, 2020) My undergraduate thesis. We propose a conjecture stating that for resonances \lambda_j of a non-compactly supported potential, the series \sum_j \Im \lambda_j/|\lambda_j|^2 diverges. Such sums naturally appear in the Breit-Wigner approximation of a compactly supported potential. We review the proofs of the Riesz representation formula for subharmonic functions and Titchmarsh's theorem on the distribution of zeroes of the Fourier transform of a compactly supported distribution, and use them to give a proof of the Breit-Wigner approximation that was outlined by Dyatlov and Zworski. We then prove our conjecture in several cases.</dd>
-<dt>Aidan Backus. <b><a href="research/formalizations.pdf">Formalizations of analysis</a></b></dt>
-<dd>[math.LO, math.CA, math.GT] (11 December, 2018) My final project for nonclassical logic at UC Berkeley. Despite the role of mathematical analysis as the foundation of physical theories, suchas quantum mechanics, the subject is often considered fraught with pathology: the existence of nonmeasurable sets, nowhere continuous functions, and other “monsters.” Such complications increase the appeal of constructive mathematics, such as Bishop’s attempt at redeveloping analysis from an intuitionistic perspective.  We will provide an overview of Bishop’s analysis and qualify his claim that classical analysis is an approximation to “constructive truth.” Finally, we consider another means of subverting analytic pathology, and contrast it to Bishop’s approach.</dd>
-<dt>Naveen Vaidya, Angelica Bloomquist, et al. <b><a href="http://www.sci.sdsu.edu/math-reu/2018-1.pdf">Mathematical Models for Linking Within-Host and Between-Host Viral Dynamics: The Effect of Antibodies on the Probability of Transmission</a></b></dt>
-<dd>[math.DS, math.AP, q-bio] (7 August, 2018) A report on work done at the 2018 San Diego State University REU.
-  Lack of HIV vaccines have made therapy essential to the reduction of HIV transmission and control of epidemics.  For the implementation of control strategies, it is critical to understand between-host transmission dynamics involving proper risk of infection, which depends on the within-host HIV dynamics of the source. In this study we develop mathematical models linking within-host and between-host HIV dynamics.  In particular, we incorporate antibody response into within-host viral dynamics models to estimate the probability of transmission from an infected individual to an uninfected indivdual.  Our models predict that this proba-bility is largely dependent on the source’s disease status, including viral load and antibody profile.  Using the probability of infection resulting from within-host models, we then develop models to describe the dynamicsof between-host transmission, which is consistent with HIV prevalence data from South Africa.
-  With these models, we evaluate how within-host disease status of infected individuals influences the between-host spreadof HIV within communities.</dd>
-<dt>Aidan Backus. <b><a href="analysis.pdf">My undergraduate analysis lecture notes</a></b></dt>
-<dd>[math.AP, math.CA, math.CV, math.DS, math.OA, quant-ph, gr-qc] (2016-2020) Banach-valued measure theory. Ergodic theory and the Hopf argument. The Toda lattice and its applications to the QR algorithm. Siegel's KAM theorem. The holomorphic functional calculus. C*-representation theory of locally compact groups. Noncommutative geometry. Hormander's \dbar estimates. Bergman kernels and their application to Chow's theorem. Pseudodifferential calculus and the FBI transform. The Cauchy problem in general relativity. Cosmic censorship in spherical symmetry.</dd>
-<dt>Aidan Backus. <b><a href="logic.pdf">My undergraduate logic leecture notes</a></b></dt>
-<dd>[math.LO] (2016-2020) The Goedel completeness and incompleteness theorems. Kleene's recursion theorem. Induction in weak subtheories of PA. Forcing and Cohen's theorem. Turing degrees and the axiom of determinacy. Consistency of GCH. Large cardinals under a measurable cardinal. Measurable cardinals and their inner models. The Kunen calamity. Supercompact cardinals and their inner models. The Ultimate L.</dd>
-</dl>
+</ol>
 
 <h2 id="talks">Talks given</h2>
 <dl>
   <dt>Summer 2021, Fourier integral operators seminar, UC Berkeley</dt>
-  <dd>Fourier integral operators with linear phase</dd>
+  <dd>Properties of Fourier integral operators (<a href="fio_props.pdf">Notes</a>)</dd>
+  <dt>Summer 2021, Fourier integral operators seminar, UC Berkeley</dt>
+  <dd>Oscillatory integrals with linear phase (<a href="linear_phase.pdf">Notes</a>)</dd>
+  <dt>Spring 2021, Complex analysis final exam, Brown University</dt>
+  <dd>The uniformization theorem (<a href="uniformization.pdf">Notes</a>)</dd>
   <dt>Spring 2021, Grad Student Seminar, Brown University</dt>
   <dd>An ultrapowerful proof technique, the Nullstellensatz, and Sendov's conjecture</dd>
   <dt>Fall 2020, MUSA Math Mondays, UC Berkeley</dt>
@@ -121,8 +128,13 @@ a {
 </dl>
 
 <h2 id="teaching">Teaching</h2>
-<p>The following is a list of my teaching posts. As of Spring 2021, all such teaching posts have been at UC Berkeley.</p>
+<p>The following is a list of my teaching posts. Prior to Fall 2021, all such teaching posts have been at UC Berkeley; after, all posts are at Brown University unless otherwise noted.</p>
 <dl>
+    <dt>Fall 2021</dt>
+    <dd>Teaching Assistant, Math 90 &mdash; Calculus<br>
+      Reader, Math 523 (Wesleyan University) &mdash; Topology</dd>
+    <dt>Summer 2021</dt>
+    <dd>Reader, Math 110 &mdash; Linear Algebra</dd>
     <dt>Spring 2021</dt>
     <dd>Reader, Math 140 &mdash; Metric Differential Geometry</dd>
     <dt>Fall 2020</dt>
@@ -147,7 +159,7 @@ a {
     <dt>Fall 2017</dt>
     <dd>Academic Intern, CS 61A &mdash; Structure and Interpretation of Computer Programs</dd>
 </dl>
-
+<!--
 <h2 id="coursework">Relevant coursework</h2>
 Classes from Fall 2018 to Summer 2020 were at UC Berkeley unless otherwise noted; since then classes have been at Brown University.
 <dl>
@@ -177,7 +189,7 @@ Classes from Fall 2018 to Summer 2020 were at UC Berkeley unless otherwise noted
             <li>Math 278 &mdash; General Relativity in Spherical Symmetry</li>
         </ul>
     </dd>
-</dl>
+</dl>-->
 
 <h2 id="clopen-analysis">Clopen Analysis</h2>
 <p>
@@ -206,6 +218,27 @@ Various other things I wrote at some point:
 <p>Once upon a time, I wrote articles at great length for the <em>Bruin Voice</em>, especially about education policy. You can read some of my work <a href="https://bruinvoice.net/staff/?writer=Aidan%20Backus">at their website</a>.
 
 <p>I also was once a chair at the <a href="https://musa.berkeley.edu">Mathematics Undergraduate Student Association of UC Berkeley</a>. I managed a proof-writing seminar and Shadow a Math Major Day.</p>
+
+
+<h2>Nonpublishable writing</h2>
+<dl>
+<dt>Aidan Backus. <b><a href="thesis.pdf">The Breit-Wigner series and distribution of resonances of potentials</a></b></dt>
+<dd>My undergraduate thesis.</dd>
+<dt>Aidan Backus. <b><a href="research/formalizations.pdf">Formalizations of analysis</a></b></dt>
+<dd>My final project for nonclassical logic at UC Berkeley.</dd>
+<dt>Naveen Vaidya, Angelica Bloomquist, et al. <b><a href="http://www.sci.sdsu.edu/math-reu/2018-1.pdf">Mathematical Models for Linking Within-Host and Between-Host Viral Dynamics: The Effect of Antibodies on the Probability of Transmission</a></b></dt>
+<dd>A report on work done at the 2018 San Diego State University REU.</dd>
+<dt>Aidan Backus. <b><a href="analysis.pdf">My undergraduate analysis lecture notes</a></b></dt>
+<dd>Banach-valued measure theory. Ergodic theory and the Hopf argument. The Toda lattice and its applications to the QR algorithm. Siegel's KAM theorem. The holomorphic functional calculus. C*-representation theory of locally compact groups. Noncommutative geometry. Hormander's \dbar estimates. Bergman kernels and their application to Chow's theorem. Pseudodifferential calculus and the FBI transform. The Cauchy problem in general relativity. Cosmic censorship in spherical symmetry.</dd>
+<dt>Aidan Backus. <b><a href="logic.pdf">My undergraduate logic leecture notes</a></b></dt>
+<dd>The Goedel completeness and incompleteness theorems. Kleene's recursion theorem. Induction in weak subtheories of PA. Forcing and Cohen's theorem. Turing degrees and the axiom of determinacy. Consistency of GCH. Large cardinals under a measurable cardinal. Measurable cardinals and their inner models. The Kunen calamity. Supercompact cardinals and their inner models. The Ultimate L.</dd>
+</dl>
+
+
+
+
 </div>
+
+
 </body>
 </html>
