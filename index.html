@@ -86,25 +86,24 @@ function showAbs(id) {
 <p class="img">
 <img src="aidan.jpg" width="400px">
 </p>
-    <p>I am Aidan Backus, a second-year Ph.D. candidate at Brown University; previously I was at UC Berkeley. My main research interest is PDE, especially its geometric and numerical-analytic aspects, but I generally enjoy interdisciplinary parts of mathematics.</p>
+    <p>I am Aidan Backus, a third-year Ph.D. candidate at Brown University; previously I was at UC Berkeley. My main research interest is PDE, especially its geometric and numerical-analytic aspects, but I generally enjoy interdisciplinary parts of mathematics.</p>
     <p>I can be reached at aidan_backus@brown.edu. You might also read my <a href="professional/cv.pdf">CV</a>, <a href="http://github.com/abackus">GitHub</a>, and blog <a href="https://backus.home.blog/">Some Compact Thoughts</a>, or check out the community-written real analysis textbook, <a href="https://clopen-analysis.github.io">Clopen Analysis</a>.</p>
     <p>Recently I've been thinking about least-gradient and best-Lipschitz functions, advised by <a href="https://vivo.brown.edu/display/gdaskalo">George Daskalopoulos</a>; see my recent <a href="research_statement.pdf">research statement</a> for more on that. I've also recently been interested in the fractal uncertainty principle and the scattering theory of resonances.</p>
-    <p>I've had the great fortune to work with Peter Connick, James Leng, Joshua Lin, and <a href="https://math.berkeley.edu/~ztao/">Zhongkai Tao</a>.</p>
 
 
 <h2 id="publications">Publications and Preprints</h2>
 <p>You can click on the titles of these papers to read their abstracts.</p>
 <ol>
-  <li><a onclick="showAbs(3)"><i>The least-gradient maximum principle on hyperbolic manifolds</i></a> (in preparation)</li>
+  <li><a onclick="showAbs(4)"><i>The fractal uncertainty principle via Dolgopyat's method in higher dimensions</i></a> (joint with <a href="https://sites.google.com/view/jamesleng/home">James Leng</a> and <a href="https://math.berkeley.edu/~ztao/">Zhongkai Tao</a>, in preparation)</li>
+  <p id="paper4" style="display:none">
+  Coming soon!</p>
+  <li><a onclick="showAbs(3)"><i>Functions of least gradient in constant curvature</i></a> (in preparation)</li>
   <p id="paper3" style="display:none">
-The least-gradient maximum principle, essentially due to Miranda and de Giorgi in the 1960s, shows that least-gradient functions define a minimal lamination of their domain.
-We extend this result to least-gradient functions on hyperbolic manifolds.</p>
-  <li><a onclick="showAbs(2)"><i>The Breit-Wigner series for noncompactly supported potentials on the line</i></a> (<a href="https://arxiv.org/abs/2005.13765">arXiv</a>)
+  Coming soon!</p>
+  <li><a onclick="showAbs(2)"><i>The Breit-Wigner series for noncompactly supported potentials on the line</i></a> (2020, <a href="https://arxiv.org/abs/2005.13765">arXiv</a> version)</li>
   <p id="paper2" style="display:none">We propose a conjecture stating that for resonances, \lambda_j, of a noncompactly supported potential, the series \sum_j \Im \lambda_j/|\lambda_j|^2 diverges. This series appears in the Breit-Wigner approximation for a compactly supported potential, in which case it converges. We provide heuristic motivation for this conjecture and prove it in several cases.</p>
-</li>
-  <li><a onclick="showAbs(1)"><i>An algorithm for computing root multiplicities in Kac-Moody algebras</i></a>, with Joshua Lin and Peter Connick (<a href="https://arxiv.org/abs/1912.04540">arXiv</a>, <a href="https://github.com/catuse/kacmoody/blob/master/kac_moody_algebra.sage">implementation in Sage</a>)
+  <li><a onclick="showAbs(1)"><i>An algorithm for computing root multiplicities in Kac-Moody algebras</i></a> (joint with Peter Connick and <a href="https://www.ocf.berkeley.edu/~joshuazlin/">Joshua Lin</a>, 2019, <a href="https://arxiv.org/abs/1912.04540">arXiv</a>, <a href="https://github.com/catuse/kacmoody/blob/master/kac_moody_algebra.sage">implementation in Sage</a>)</li>
     <p id="paper1" style="display:none">We provide an algorithm based on the Peterson recurrence formula to compute root multiplicities in Kac-Moody algebras, and argue that it is more efficient than the naive algorithm.</p>
-  </li>
 </ol>
 
 <h2 id="talks">Talks given</h2>
@@ -120,6 +119,8 @@ We extend this result to least-gradient functions on hyperbolic manifolds.</p>
   <dt>Summer 2020, Scattering theory seminar, UC Berkeley</dt>
   <dd>Resonance-free regions I: The geometry of trapping, nontrapping estimates, and semiclassical defect measures; The scattering matrix in dimension 3</dd>
 </dl>
+
+<!--
 
 <h2 id="questions">Questions</h2>
 <p>Here are some interesting questions, and some thoughts on how to solve them. If you have more thoughts, feel free to send me an email!</p>
@@ -143,6 +144,8 @@ We extend this result to least-gradient functions on hyperbolic manifolds.</p>
 <li><p><strong>Give an algorithm for computing the root multiplicities of <a href="https://en.wikipedia.org/wiki/Kac%E2%80%93Moody_algebra">Kac-Moody algebras</a> of rank r whose runtime is at most exponential in r.</strong></p>
   <p>The algorithm of <a href="https://arxiv.org/abs/1912.04540">Connick, Lin, and myself</a> has superexponential runtime in r. Most of the runtime comes from repeated matrix operations involving the <a href="https://en.wikipedia.org/wiki/Cartan_matrix">Cartan matrix</a>, which could be avoided if the Cartan matrix was written in a basis where it is sparse, for example diagonal. One could potentially use Galois theory to show that instead of working over the rational numbers, one could work in a clever chosen number field where the Cartan matrix admits a sparse basis. (This was pointed out to me by Joshua Lin.) However, I don't know if there are efficient matrix-multiplication algorithms over number fields.</p></li>
 </ol>
+
+-->
 
 <h2 id="teaching">Teaching</h2>
 <p>The following is a list of my teaching posts. Prior to Fall 2021, all such teaching posts have been at UC Berkeley; after, all posts are at Brown University unless otherwise noted.</p>
